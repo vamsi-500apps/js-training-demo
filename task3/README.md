@@ -19,4 +19,4 @@ Examine the code in the editor. It's using a method that has side effects in the
 
 Change Window.prototype.tabClose so that it removes the correct tab.
 
-output:chrome-extension://gcfefmncefkaghcobeocaekopmmpofmc/popup/popup.html#/video?id=114968
+output:https://drive.500apps.com/11056b1e

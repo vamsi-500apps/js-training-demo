@@ -127,5 +127,4 @@ const watchList = [
 
   function getOutput() {
     document.getElementById("output").innerText=JSON.stringify(filteredList);
-
-}
+  }
