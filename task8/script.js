@@ -1,16 +1,20 @@
-let a=[1,2,4,3,5]
-Array.prototype.myMap = function(callback) {
-    const newArray = [];
-    // Only change code below this line
-    for (let i = 0; i < this.length; i++) {
-      newArray.push(callback(this[i], i, this));
-    }
-    // Only change code above this line
-    return newArray;
+function pairElement(str) {
+  // create object for pair lookup
+  const pairs = {
+    A: "T",
+    T: "A",
+    C: "G",
+    G: "C"
   };
 
-  
-  function getOutput() {
-    document.getElementById("output").innerText=a.myMap((item)=>item*2);
+  // map character to array of character and matching pair
+  return str
+    .split("")
+    .map(x => [x, pairs[x]]);
+}
 
+// test here
+pairElement("GCG");
+function getOutput(){
+  document.getElementById("output").innerText= pairElement("GCG");
 }

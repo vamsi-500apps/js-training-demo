@@ -1,18 +1,24 @@
-Apply Functional Programming to Convert Strings to URL Slugs
-The last several challenges covered a number of useful array and string methods that follow functional programming principles. We've also learned about reduce, which is a powerful method used to reduce problems to simpler forms. From computing averages to sorting, any array operation can be achieved by applying it. Recall that map and filter are special cases of reduce.
 
-Let's combine what we've learned to solve a practical problem.
+Intermediate Algorithm Scripting
+Map the Debris
+According to Kepler's Third Law, the orbital period  T  of two point masses orbiting each other in a circular or elliptic orbit is:
 
-Many content management sites (CMS) have the titles of a post added to part of the URL for simple bookmarking purposes. For example, if you write a Medium post titled Stop Using Reduce, it's likely the URL would have some form of the title string in it (.../stop-using-reduce). You may have already noticed this on the freeCodeCamp site.
+T=2πa3μ−−−√
+ 
+a  is the orbit's semi-major axis
+μ=GM  is the standard gravitational parameter
+G  is the gravitational constant,
+M  is the mass of the more massive body.
+Return a new array that transforms the elements' average altitude into their orbital periods (in seconds).
 
-Fill in the urlSlug function so it converts a string title and returns the hyphenated version for the URL. You can use any of the methods covered in this section, and don't use replace. Here are the requirements:
+The array will contain objects in the format {name: 'name', avgAlt: avgAlt}.
 
-The input is a string with spaces and title-cased words
+The values should be rounded to the nearest whole number. The body being orbited is Earth.
 
-The output is a string with the spaces between words replaced by a hyphen (-)
+The radius of the earth is 6367.4447 kilometers, and the GM value of earth is 398600.4418 km3s-2.
 
-The output should be all lower-cased letters
 
-The output should not have any spaces
 
-output:https://drive.500apps.com/1cea3870
+
+
+output:https://drive.500apps.com/483cf24a

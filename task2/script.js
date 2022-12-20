@@ -1,25 +1,10 @@
-const prepareGreenTea = () => 'greenTea';
-
-// Function that returns a string representing a cup of black tea
-const prepareBlackTea = () => 'blackTea';
-
-
-const getTea = (prepareTea, numOfCups) => {
-  const teaCups = [];
-
-  for(let cups = 1; cups <= numOfCups; cups += 1) {
-    const teaCup = prepareTea();
-    teaCups.push(teaCup);
+function diffArray(arr1, arr2) {
+    let newArr = [];
+   return arr1.concat(arr2).filter(item =>!arr1.includes(item)||!arr2.includes(item))
   }
-  return teaCups;
-};
+  
+ 
 
-// Only change code below this line
-const tea4GreenTeamFCC = getTea(prepareGreenTea,27);
-const tea4BlackTeamFCC = getTea(prepareBlackTea,13);
-// Only change code above this line
-
-let a=[tea4GreenTeamFCC,tea4BlackTeamFCC];
-function getOutput(){
-    document.getElementById("output").innerText=a;
-}
+  function getOutput(){
+    document.getElementById("output").innerText= diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+ }

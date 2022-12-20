@@ -1,19 +1,15 @@
 
-Functional Programming
-Split a String into an Array Using the split Method
-The split method splits a string into an array of strings. It takes an argument for the delimiter, which can be a character to use to break up the string or a regular expression. For example, if the delimiter is a space, you get an array of words, and if the delimiter is an empty string, you get an array of each character in the string.
+Arguments Optional
+Create a function that sums two arguments together. If only one argument is provided, then return a function that expects one argument and returns the sum.
 
-Here are two examples that split one string by spaces, then another by digits using a regular expression:
+For example, addTogether(2, 3) should return 5, and addTogether(2) should return a function.
 
-const str = "Hello World";
-const bySpace = str.split(" ");
+Calling this returned function with a single argument will then return the sum:
 
-const otherString = "How9are7you2today";
-const byDigits = otherString.split(/\d/);
-bySpace would have the value ["Hello", "World"] and byDigits would have the value ["How", "are", "you", "today"].
+var sumTwoAnd = addTogether(2);
+sumTwoAnd(3) returns 5.
 
-Since strings are immutable, the split method makes it easier to work with them.
+If either argument isn't a valid number, return undefined.
 
-Use the split method inside the splitify function to split str into an array of words. The function should return the array. Note that the words are not always separated by spaces, and the array should not contain punctuation.
 
-output:https://drive.500apps.com/95c1011c
+output:https://drive.500apps.com/f375a97e

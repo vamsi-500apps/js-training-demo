@@ -1,14 +1,21 @@
-function nonMutatingConcat(original, attach) {
-    // Only change code below this line
-  
-    return original.concat(attach);
-  
-     // Only change code above this line
-  }
-  var first = [1, 2, 3];
-  var second = [4, 5];
-  nonMutatingConcat(first, second);
 
-  function getOutput() {
-    document.getElementById("output").innerText=  nonMutatingConcat(first, second);
+function sumPrimes(num) {
+  let sum=0
+  for(let i=1;i<=num;i++) {
+    let count=0;
+    for(let j=1;j<=i;j++) {
+      if(i%j==0) {
+        count++;
+      }
+    }
+    if(count==2){
+      sum=sum+i;
+    }
+  }
+  return sum;
+}
+
+sumPrimes(10);
+function getOutput(){
+  document.getElementById("output").innerText= sumPrimes(10);;
 }

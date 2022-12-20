@@ -1,19 +1,6 @@
-Avoid Mutations and Side Effects Using Functional Programming
-If you haven't already figured it out, the issue in the previous challenge was with the splice call in the tabClose() function. Unfortunately, splice changes the original array it is called on, so the second call to it used a modified array, and gave unexpected results.
+Wherefore art thou
+Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching name and value pairs (second argument). Each name and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.
 
-This is a small example of a much larger pattern - you call a function on a variable, array, or an object, and the function changes the variable or something in the object.
+For example, if the first argument is [{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], and the second argument is { last: "Capulet" }, then you must return the third object from the array (the first argument), because it contains the name and its value, that was passed on as the second argument.
 
-One of the core principles of functional programming is to not change things. Changes lead to bugs. It's easier to prevent bugs knowing that your functions don't change anything, including the function arguments or any global variable.
-
-The previous example didn't have any complicated operations but the splice method changed the original array, and resulted in a bug.
-
-Recall that in functional programming, changing or altering things is called mutation, and the outcome is called a side effect. A function, ideally, should be a pure function, meaning that it does not cause any side effects.
-
-Let's try to master this discipline and not alter any variable or object in our code.
-
-Fill in the code for the function incrementer so it returns the value of the global variable fixedValue increased by one.
-
-Tests
-
-
-output:chrome-extension:https://drive.500apps.com/60c4f976
+output:https://drive.500apps.com/fd729422

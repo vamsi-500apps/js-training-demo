@@ -1,17 +1,24 @@
-let a=[2,3,4,5,6,7,8]
-Array.prototype.myFilter = function(callback) {
-    const newArray = [];
-    // Only change code below this line
-    for (let i = 0; i < this.length; i++) {
-      if (Boolean(callback(this[i], i, this)) === true) {
-        newArray.push(this[i]);
+
+function uniteUnique(arr1, arr2, arr3) {
+ 
+  const finalArray = [];
+  for (let i = 0; i < arguments.length; i++) {
+    const arrayArguments = arguments[i];
+  
+    for (let j = 0; j < arrayArguments.length; j++) {
+      let indexValue = arrayArguments[j];
+
+      if (finalArray.indexOf(indexValue) < 0) {
+        finalArray.push(indexValue);
       }
     }
-    // Only change code above this line
-    return newArray;
-  };
-   
-  function getOutput() {
-    document.getElementById("output").innerText=a.myFilter((item)=>item%2==0);
+  }
 
+  return finalArray;
+}
+
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+  
+function getOutput(){
+  document.getElementById("output").innerText=uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 }

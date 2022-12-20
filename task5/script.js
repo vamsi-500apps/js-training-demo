@@ -1,16 +1,9 @@
-// The global variable
-let fixedValue = 4;
-let a=fixedValue
 
-// Only change code below this line
-function incrementer(a) {
-  return a+1
-
-
-  // Only change code above this line
+function spinalCase(str) {
+  return str.split(/\s|_|(?=[A-Z])/).join("-").toLowerCase();
 }
-incrementer(a)
-function getOutput() {
-    document.getElementById("output").innerText=incrementer(fixedValue);
 
+spinalCase('This Is Spinal Tap');
+function getOutput(){
+  document.getElementById("output").innerText= spinalCase('This Is Spinal Tap');
 }

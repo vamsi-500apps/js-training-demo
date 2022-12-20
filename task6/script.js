@@ -1,42 +1,22 @@
-
-// The global variable
-const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
-
-// Change code below this line
-
-function add(bookList,bookName) {
- let newArr=[...bookList];
-  newArr.push(bookName);
-  return newArr;
+function translatePigLatin(str) {
+  let vowels=["a","e","i","o","u"]
+  let a=0
+  for (let i of str){
+  if (vowels.includes(i)){
+  a=a+str.indexOf(i)
+  break;
+  }
+  }
+  if (vowels.includes(str[0])){ return str+"way"} else{
+  return str.slice(a)+str.slice(0,a)+"ay"}
+  }
+  translatePigLatin("california")
+  translatePigLatin("paragraphs")
+  translatePigLatin("glove")
+  translatePigLatin("algorithm")
+  translatePigLatin("eight")
   
-  // Change code above this line
-}
-
-
-
-// Change code below this line
-function remove(bookList,bookName) {
-let newArr=[...bookList];
-
-  if (newArr.indexOf(bookName) >= 0) {
-
-  newArr.splice(newArr.indexOf(bookName), 1); 
-    return newArr;
-
-    // Change code above this line
-    }
-}
-
-
-let newBookList = add(bookList, 'A Brief History of Time');
-let newerBookList = remove(bookList, 'On The Electrodynamics of Moving Bodies');
-let newestBookList = remove(add(bookList, 'A Brief History of Time'), 'On The Electrodynamics of Moving Bodies');
-
-console.log(bookList);
-
-
-
-function getOutput() {
-    document.getElementById("output").innerText=bookList;
-
+  
+function getOutput(){
+  document.getElementById("output").innerText=translatePigLatin("california");
 }

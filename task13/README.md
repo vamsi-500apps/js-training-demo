@@ -1,10 +1,7 @@
-Combine Two Arrays Using the concat Method
-Concatenation means to join items end to end. JavaScript offers the concat method for both strings and arrays that work in the same way. For arrays, the method is called on one, then another array is provided as the argument to concat, which is added to the end of the first array. It returns a new array and does not mutate either of the original arrays. Here's an example:
+Sum All Primes
+A prime number is a whole number greater than 1 with exactly two divisors: 1 and itself. For example, 2 is a prime number because it is only divisible by 1 and 2. In contrast, 4 is not prime since it is divisible by 1, 2 and 4.
 
-[1, 2, 3].concat([4, 5, 6]);
-The returned array would be [1, 2, 3, 4, 5, 6].
-
-Use the concat method in the nonMutatingConcat function to concatenate attach to the end of original. The function should return the concatenated array.
+Rewrite sumPrimes so it returns the sum of all prime numbers that are less than or equal to num.
 
 
-output:https://drive.500apps.com/101a800c
+output:https://drive.500apps.com/4339c354

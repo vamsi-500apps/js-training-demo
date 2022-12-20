@@ -1,6 +1,11 @@
-Implement the filter Method on a Prototype
-You might learn a lot about the filter method if you implement your own version of it. It is recommended you use a for loop or Array.prototype.forEach().
+Sorted Union
+Write a function that takes two or more arrays and returns a new array of unique values in the order of the original provided arrays.
 
-Write your own Array.prototype.myFilter(), which should behave exactly like Array.prototype.filter(). You should not use the built-in filter method. The Array instance can be accessed in the myFilter method using this.
+In other words, all values present from all arrays should be included in their original order, but with no duplicates in the final array.
 
-output:https://drive.500apps.com/5f549d98
+The unique numbers should be sorted by their original order, but the final array should not be sorted in numerical order.
+
+Check the assertion tests for examples.
+
+
+output:https://drive.500apps.com/30ea5e52

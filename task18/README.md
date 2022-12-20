@@ -1,6 +1,10 @@
-Return a Sorted Array Without Changing the Original Array
-A side effect of the sort method is that it changes the order of the elements in the original array. In other words, it mutates the array in place. One way to avoid this is to first concatenate an empty array to the one being sorted (remember that slice and concat return a new array), then run the sort method.
+Everything Be True
+Check if the predicate (second argument) is truthy on all elements of a collection (first argument).
 
-Use the sort method in the nonMutatingSort function to sort the elements of an array in ascending order. The function should return a new array, and not mutate the globalArray variable.
+In other words, you are given an array collection of objects. The predicate pre will be an object property and you need to return true if its value is truthy. Otherwise, return false.
 
-output:https://drive.500apps.com/5784d824
+In JavaScript, truthy values are values that translate to true when evaluated in a Boolean context.
+
+Remember, you can access object properties through either dot notation or [] notation.
+
+output:https://drive.500apps.com/2ef52188

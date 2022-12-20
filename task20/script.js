@@ -1,11 +1,35 @@
-function sentensify(str) {
-    // Only change code below this line
+const Person = function(firstAndLast) {
+  let fullName = firstAndLast;
+
+  this.getFirstName = function() {
+    return fullName.split(" ")[0];
+  };
+
+  this.getLastName = function() {
+    return fullName.split(" ")[1];
+  };
+
+  this.getFullName = function() {
+    return fullName;
+  };
+
+  this.setFirstName = function(name) {
+    fullName = name + " " + fullName.split(" ")[1];
+  };
+
+  this.setLastName = function(name) {
+    fullName = fullName.split(" ")[0] + " " + name;
+  };
+
+  this.setFullName = function(name) {
+    fullName = name;
+  };
+};
+
+const bob = new Person("Bob Ross");
+console.log(bob.getFullName());
   
-  return str.split(/\W/).join(" ");
-    // Only change code above this line
-  }
   
-  sentensify("May-the-force-be-with-you");
-  function getOutput() {
-    document.getElementById("output").innerText=  sentensify("May-the-force-be-with-you");
-  }  
+function getOutput(){
+  document.getElementById("output").innerText=bob.getFullName();
+}

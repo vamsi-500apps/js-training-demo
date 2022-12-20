@@ -1,26 +1,14 @@
-// Function that returns a string representing a cup of green tea
-const prepareTea = () => 'greenTea';
-
-/*
-Given a function (representing the tea type) and number of cups needed, the
-following function returns an array of strings (each representing a cup of
-a specific type of tea).
-*/
-const getTea = (numOfCups) => {
-  const teaCups = [];
-
-  for(let cups = 1; cups <= numOfCups; cups += 1) {
-    const teaCup = prepareTea();
-    teaCups.push(teaCup);
+function sumAll(arr) {
+    let sum=0;
+    let maxEle=Math.max(arr[0],arr[1]);
+    let minEle=Math.min(arr[0],arr[1]);
+    for(let i=minEle;i<=maxEle;i++)
+    {
+   sum=sum+i;
+    }
+    return sum;
   }
-  return teaCups;
-}
-
-// Only change code below this line
-
-const tea4TeamFCC =getTea(40) ;
-// console.log(tea4TeamFCC);
-//Only change code above this line
- function getOutput() {
-    document.getElementById("output").innerText =tea4TeamFCC;
- }
+  
+ 
+  function getOutput(){
+    document.getElementById("output").innerText= sumAll([1, 4]); }

@@ -1,10 +1,11 @@
-Implement map on a Prototype
-As you have seen from applying Array.prototype.map(), or simply map() earlier, the map method returns an array of the same length as the one it was called on. It also doesn't alter the original array, as long as its callback function doesn't.
+DNA Pairing
+Pairs of DNA strands consist of nucleobase pairs. Base pairs are represented by the characters AT and CG, which form building blocks of the DNA double helix.
 
-In other words, map is a pure function, and its output depends solely on its inputs. Plus, it takes another function as its argument.
+The DNA strand is missing the pairing element. Write a function to match the missing base pairs for the provided DNA strand. For each character in the provided string, find the base pair character. Return the results as a 2d array.
 
-You might learn a lot about the map method if you implement your own version of it. It is recommended you use a for loop or Array.prototype.forEach().
+For example, for the input GCG, return [["G", "C"], ["C","G"], ["G", "C"]]
 
-Write your own Array.prototype.myMap(), which should behave exactly like Array.prototype.map(). You should not use the built-in map method. The Array instance can be accessed in the myMap method using this.
+The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.
 
-output:https://drive.500apps.com/1798f4ae
+
+output:https://drive.500apps.com/359978be

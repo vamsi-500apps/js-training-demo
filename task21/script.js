@@ -1,14 +1,15 @@
+function orbitalPeriod(arr) {
+  const GM = 398600.4418;
+  const earthRadius = 6367.4447;
+  return arr.map(({ name, avgAlt }) => {
+    const earth = earthRadius + avgAlt;
+    const orbitalPeriod = Math.round(2 * Math.PI * Math.sqrt(Math.pow(earth, 3)/GM));
+    return { name, orbitalPeriod };
+  });
+}
 
-function urlSlug(title) {
-    // Only change code below this line
-    return title.split(" ").filter(substr => substr !== "").join("-").toLowerCase();
-    
+orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
   
-  }
-  // Only change code above this line
-  urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone");
-  
-  
-  function getOutput() {
-    document.getElementById("output").innerText=  urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone");
-  }    
+function getOutput(){
+  document.getElementById("output").innerText=JSON.stringify(orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]));
+}
